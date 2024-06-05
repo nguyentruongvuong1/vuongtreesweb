@@ -1,0 +1,67 @@
+<header class="hearder_admin">
+    <h3>VƯƠNG <span>TREES</span> Admin</h3>
+</header>
+
+<nav  class="nav_admin">
+    <div class="nav_admin_link" >
+    <i  class="bi bi-speedometer" ></i>
+    <a  href="admin_index.html">Dashboard</a>
+    </div>
+    <div  class="nav_admin_link" >
+    <i   class="bi bi-archive-fill"></i>
+    <a   href="/" routerLink="/admin/Cates">Quản lí danh mục</a>
+    </div>
+    <div class="nav_admin_link" style="background-color: gray;">
+    <i style="color: black;" class="bi bi-box2-heart-fill"></i>    
+    <a style="color: black;" routerLink="/admin/Products">Quản lí sản phẩm</a>
+    </div>
+    <div class="nav_admin_link">
+    <i class="bi bi-inboxes-fill"></i>
+    <a href="">Quản lí đơn hàng</a>
+    </div>
+    <div class="nav_admin_link">
+    <i class="bi bi-person-circle"></i>   
+    <a href="./user.html">Quản lí tài khoản</a>
+    </div>  
+</nav>
+
+<div class="link_dashboard">
+    <p> <strong>Home </strong></p>
+    <p>/</p>
+    <p style="color: #00791c;"> Admin</p>
+    <p>/</p>
+    <p ><a href="" routerLink="/admin/Products"> Sản phẩm</a></p>
+</div>
+
+<form action="" [formGroup]="AddForm" class="admin_formadd" >
+    <h1>Sửa sản phẩm</h1>
+    <div>
+        <label for="">Tên sản phẩm</label> 
+        <input type="text" formControlName="name">
+    </div>
+    <div class="admin_form_sl">
+        <label for="" >Giá sản phẩm</label> 
+        <input type="number" formControlName="price">
+    </div>
+    <div>
+        <label for="">Ảnh sản phẩm</label> 
+        <input type="text" formControlName="img">
+    </div>
+    <div class="admin_form_sl">
+        <label for="">Số lượng</label> 
+        <input type="number" min="0" max="100" formControlName="quantity">
+    </div>
+    <div class="admin_form_idCate">
+        <label for="" >Id danh mục</label> 
+        <input type="number" min="0" max="100" formControlName="cate_id">
+    </div>
+    <div>
+        <label for="">Mô tả</label> 
+        <input type="text" formControlName="description">
+    </div>
+    <div class="admin_form_ngay">
+        <label for="">Ngày</label>
+        <input type="date" formControlName="ngay">
+    </div>
+    <button type="button" (click)="Add()" class="admin_add">Thêm</button>
+</form>

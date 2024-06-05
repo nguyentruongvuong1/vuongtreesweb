@@ -1,0 +1,26 @@
+
+<main   id="listnewpr" class="main-product">
+    <h3>SẢN PHẨM MỚI</h3>
+    <div class="pr">
+    <div *ngFor="let p of Products" class="product">
+        <div class="product-con">
+            <a href="#" routerLink="Pdetail/{{p.id}}">
+                <img src="{{p.img}}" alt=""> </a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+            </svg>
+            <button class="product-mn">Mua ngay</button>
+            <button class="product-tvg">Thêm vào giỏ</button>
+        </div>
+        <div class="product-name-price">
+            <p class="product-name">{{p.name.toLocaleUpperCase()}}</p>
+            <p>{{p.price.toLocaleString('vi')}} VNĐ</p>
+        </div>
+    </div>
+    </div>
+    
+
+</main>
+
+

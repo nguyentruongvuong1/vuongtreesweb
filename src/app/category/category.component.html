@@ -1,0 +1,13 @@
+
+<nav class="nav-dmsp">
+    <h3>DANH MỤC SẢN PHẨM</h3>
+
+    <div *ngFor="let c of Cate" class="nav-dmsp-main">
+    <div class="nav-dmsp-main-con">
+       <a href="" routerLink="product_by_cate/{{c.id}}"> <img src="{{c.img}}" alt=""> </a>
+        <p>{{c.name.toUpperCase()}}</p>
+    </div>
+
+</div>
+   </nav>
+  

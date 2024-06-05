@@ -1,0 +1,68 @@
+
+<header class="hearder_admin">
+    <h3>VƯƠNG <span>TREES</span> Admin</h3>
+</header>
+<nav  class="nav_admin">
+    <div class="nav_admin_link" >
+    <i  class="bi bi-speedometer" ></i>
+    <a  href="admin_index.html">Dashboard</a>
+    </div>
+    <div  class="nav_admin_link" >
+    <i   class="bi bi-archive-fill"></i>
+    <a   href="/" routerLink="/admin/Cates">Quản lí danh mục</a>
+    </div>
+    <div class="nav_admin_link" style="background-color: gray;">
+    <i style="color: black;" class="bi bi-box2-heart-fill"></i>    
+    <a style="color: black;" routerLink="/admin/Products">Quản lí sản phẩm</a>
+    </div>
+    <div class="nav_admin_link">
+    <i class="bi bi-inboxes-fill"></i>
+    <a href="">Quản lí đơn hàng</a>
+    </div>
+    <div class="nav_admin_link">
+    <i class="bi bi-person-circle"></i>   
+    <a href="./user.html">Quản lí tài khoản</a>
+    </div>  
+</nav>
+
+<div class="link_dashboard">
+    <p> <strong>Home </strong></p>
+    <p>/</p>
+    <p style="color: #00791c;"> Admin</p>
+    <p>/</p>
+    <p ><a href="#" routerLink="/admin/Products"> Sản phẩm</a></p>
+</div>
+
+    <a href="#"  class="Cate_add" routerLink="/admin/add_product">Thêm sản phẩm</a>
+
+<table class="admin_showsp">
+        <tbody>
+        <tr>
+        <th>ID </th>
+        <th>Tên sản phẩm</th>
+        <th>Giá </th>
+        <th>Ảnh sản phẩm</th>
+        <th>Số lượng</th>
+        <th>ID danh mục</th>
+        <th>Xem</th>
+        <th>Ngày</th>
+        <th>Chức năng</th>
+        </tr>
+
+        <tr *ngFor="let p of Products">
+            <td>{{p.id}}</td>
+            <td>{{p.name}}</td>
+            <td>{{p.price}}</td>
+            <td><img width="50px" height="50px" src="{{p.img}}" alt=""></td>
+            <td>{{p.quantity}}</td>
+            <td>{{p.cate_id}}</td>
+            <td>{{p.xem}}</td>
+            <td>{{p.ngay | date: 'dd/MM/yyyy'}}</td>
+            <td><button class="admin_sua" routerLink="/admin/edit_product/{{p.id}}" >Sửa </button>
+                <button class="admin_xoa" (click)="Deletepr(p.id)">Xóa</button></td>
+                
+            </tr>
+        </tbody>
+       
+       </table> 
+

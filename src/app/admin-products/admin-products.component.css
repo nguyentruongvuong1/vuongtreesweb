@@ -1,0 +1,268 @@
+.Cate_add {
+  border: 1px solid #00791c;
+  text-decoration: none;
+  padding: 10px;
+border-radius: 5px;
+background-color: #00791c;
+color: white;
+margin-left: 963px;
+}
+.Cate_add:hover{
+  color: black;
+}
+.hearder_admin h3{
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.hearder_admin{
+    height: 50px;
+    display: flex;
+    border-bottom: 3px solid black;
+    margin-left: -8px;
+    padding-left: 5px;
+    align-items: center;
+    margin-top: -8px;
+    }
+    
+    
+    
+    .hearder_admin span{
+    color: #00791c;
+    }
+    
+    .hearder_admin .bi-list{
+    padding-top: 5px;
+    margin-left: 22px;
+    }
+    
+    
+    
+    /* NAV NAV */
+    .nav_admin a{
+        display: block;
+        text-decoration: none;
+        color: white;
+    }
+    
+    
+    
+    .nav_admin{
+    float: left;
+    width: 250px;
+    margin-left: -8px;
+    background-color: #224229;
+    height: 690px;
+    display: block;
+    }
+    
+    
+    
+    .nav_admin_link{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    height: 50px;
+    cursor: pointer;
+    }
+    
+    .nav_admin_link i{
+    margin-right: 20px;
+       font-size: 30px;
+       color: white;
+    align-items: center;
+    
+    }
+    
+    
+    .nav_admin_link:hover{
+        background-color: gray;
+    }
+    
+    .nav_admin_link:hover a{
+        color: black;
+    }
+    
+    
+    .link_dashboard{
+        display: flex;
+        padding-left: 5px;
+    }
+    
+    .link_dashboard p{
+        margin-left: 5px;
+        margin-top: 13px;
+    }
+    
+    .link_dashboard a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.462);
+    }
+    
+    .link_dashboard a:hover{
+        color: black;
+        
+    }
+    
+    
+    .tbsp{
+        /* padding-top: 30px; */
+        /* padding-left: 15%; */
+        width: 100%;
+    }
+    
+
+    .admin_showsp a{
+      text-decoration: none;
+      color: black;
+   
+    }
+
+  
+    
+    .admin_showsp{
+        border: 2px solid rgba(0, 0, 0, 0.214);  
+        text-align: center;
+        width: 60%;
+        position: absolute;
+        margin-left: 420px;
+        border-collapse: collapse;
+        margin-top: 20px;
+    
+    }
+    
+    .admin_showsp td{
+    
+        border-bottom: 2px solid rgba(0, 0, 0, 0.214);
+        border-top: 2px solid rgba(0, 0, 0, 0.214);
+    }
+    .admin_showsp th{
+        /* border: 3px solid black; */
+        background-color: black;
+        color: white;
+    }
+    
+    .admin_sua{
+      border: 1px solid yellow;
+        width: 70px;
+        border-radius: 5px;
+        height: 40px;
+        cursor: pointer;
+        background-color: yellow;
+        margin: 5px;
+    }
+
+    .admin_xoa{
+      border: 1px solid red;
+      width: 70px;
+      border-radius: 5px;
+      height: 40px;
+      cursor: pointer;
+      background-color: red;
+      margin: 5px;
+  }
+  .admin_sua:hover{
+    color: blue;
+  }
+  .admin_xoa:hover{
+    color: white;
+  }
+    
+
+    .admin_showsp input{
+      width: 30px;
+    }
+
+    
+    .btn-them{
+        height: 40px;
+        width: 150px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        background-color: #224229;
+        color: white;
+        cursor: pointer;
+        margin-top: -43px;  
+        float: right;
+        margin-right: 218px;
+    }
+
+    .btn-them a{
+      color: white;
+      text-decoration: none;
+  } 
+    
+    .btn-them a:hover{
+      color: blue;
+    }
+    
+    
+    
+    
+      
+      form {
+          width: 550px;
+          margin: 20px;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          background-color: #f9f9f9;
+          margin-left: 470px;
+            padding-left: 65px;    
+        }
+      
+      
+        form h1{
+            margin-top: -5px;
+            text-align: center;
+            margin-left: -30px;
+        }
+      
+      form label{
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }  
+      
+      form input{
+        display: block;
+        margin-bottom: 5px;
+        height: 35px;
+        width: 500px;
+        border-radius: 5px;
+      }
+      
+      form button{
+        display: block;
+        margin-bottom: 5px;
+        height: 40px;
+        width: 508px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        background-color: #224229;
+        color: white;
+      }
+      
+      form button:hover{
+        color: black;
+      }
+      
+     
+      
+      .admin-qlsp-header-qlsp{
+      background-color: #224229;
+      color: white;
+      height: 40px;
+      }
+      
+      .admin-qlsp-header-qlsp h3{
+        margin-left: 10px;
+      }
+
+
+      .sp_quantity{
+        width: 30px;
+      }
+      
+    
+    
